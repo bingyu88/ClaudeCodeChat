@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Claude Code Chat - Beautiful Claude Code Chat Interface for VS Code</title>
+    <meta name="description" content="Claude Code Chat：最强 VS Code AI 聊天助手，支持代码理解、重构、调试、文件搜索、MCP 服务器、权限管理、图片粘贴等。Claude Code Chat 让开发更高效、更智能。">
+    <meta name="keywords" content="claude code chat, VS Code AI, AI 聊天, 代码助手, AI 编程, Claude, Anthropic, VSCode 插件, 代码重构, 代码调试, MCP, 文件搜索, 权限管理, AI Copilot, AI 开发工具">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Claude Code Chat - 最强 VS Code AI 聊天助手">
+    <meta property="og:description" content="Claude Code Chat：AI 赋能开发，支持代码理解、重构、调试、文件搜索、MCP 服务器、权限管理等。Claude Code Chat 让开发更高效、更智能。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://claudecode.chat/">
+    <meta property="og:image" content="/logo.svg">
+    <meta property="og:site_name" content="Claude Code Chat">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Claude Code Chat - 最强 VS Code AI 聊天助手">
+    <meta name="twitter:description" content="Claude Code Chat：AI 赋能开发，支持代码理解、重构、调试、文件搜索、MCP 服务器、权限管理等。Claude Code Chat 让开发更高效、更智能。">
+    <meta name="twitter:image" content="/logo.svg">
     <style>
         :root {
             --primary: #4F46E5;
@@ -159,6 +172,7 @@
             height: 200%;
             background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
             transform: rotate(30deg);
+            pointer-events: none;
         }
 
         .hero-content {
@@ -715,11 +729,11 @@
         <div class="container nav-container">
             <a href="https://claudecode.chat" class="nav-logo">🚀 Claude Code Chat</a>
             <ul class="nav-menu">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#key-features">Key Features</a></li>
-                <li><a href="#getting-started">Getting Started</a></li>
-                <li><a href="#usage">Usage</a></li>
-                <li><a href="#configuration">Configuration</a></li>
+                <li><a href="#features" data-i18n="nav-features"></a></li>
+                <li><a href="#key-features" data-i18n="nav-key-features"></a></li>
+                <li><a href="#getting-started" data-i18n="nav-getting-started"></a></li>
+                <li><a href="#usage" data-i18n="nav-usage"></a></li>
+                <li><a href="#configuration" data-i18n="nav-configuration"></a></li>
             </ul>
             <div class="nav-controls">
                 <select class="language-toggle" onchange="changeLanguage(this.value)">
@@ -733,6 +747,12 @@
                     <option value="ru">Русский</option>
                     <option value="ko">한국어</option>
                     <option value="it">Italiano</option>
+                    <option value="ar">العربية</option>
+                    <option value="hi">हिन्दी</option>
+                    <option value="bn">বাংলা</option>
+                    <option value="vi">Tiếng Việt</option>
+                    <option value="th">ไทย</option>
+                    <option value="id">Bahasa Indonesia</option>
                 </select>
                 <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
             </div>
@@ -742,15 +762,15 @@
     <header>
         <div class="hero-content">
             <div class="hero-left">
-                <div class="hero-badge">VS Code Extension</div>
-                <h1>🚀 Claude Code Chat</h1>
-                <p class="tagline">Beautiful Claude Code Chat Interface for VS Code</p>
-                <a href="#getting-started" class="cta-button">Get Started</a>
+                <div class="hero-badge" data-i18n="hero-badge"></div>
+                <h1 data-i18n="hero-title"></h1>
+                <p class="tagline" data-i18n="hero-tagline"></p>
+                <a href="#getting-started" class="cta-button" data-i18n="cta-button"></a>
             </div>
             <div class="hero-right">
                 <br/>
-                <p class="hero-description">Ditch the command line and experience Claude Code like never before. This extension brings a stunning chat interface directly into your editor, making AI assistance accessible, visual, and enjoyable.</p>
-                <p class="hero-description"><strong>🤖 Built by Claude Code for Claude Code</strong> - This extension was entirely developed using Claude Code itself. Claude Code created its own chat interface!</p>
+                <p class="hero-description" data-i18n="hero-desc1"></p>
+                <p class="hero-description"><strong>🤖</strong> <span data-i18n="hero-desc2"></span></p>
             </div>
         </div>
     </header>
@@ -758,71 +778,71 @@
     <section id="features">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">✨ Why Choose Claude Code Chat?</h2>
-                <p class="section-subtitle">Experience the future of AI-assisted development with these powerful features</p>
+                <h2 class="section-title" data-i18n="why-choose-title"></h2>
+                <p class="section-subtitle" data-i18n="why-choose-subtitle"></p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">🖥️</div>
                     <div class="feature-text">
-                        <h3 class="feature-title">No Terminal Required</h3>
-                        <p class="feature-description">Beautiful chat interface replaces command-line interactions</p>
+                        <h3 class="feature-title" data-i18n="feature-no-terminal-title"></h3>
+                        <p class="feature-description" data-i18n="feature-no-terminal-desc"></p>
                     </div>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">⏪</div>
                     <div class="feature-text">
-                        <h3 class="feature-title">Restore Checkpoints</h3>
-                        <p class="feature-description">Undo changes and restore code to any previous state</p>
+                        <h3 class="feature-title" data-i18n="feature-restore-title"></h3>
+                        <p class="feature-description" data-i18n="feature-restore-desc"></p>
                     </div>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🔌</div>
                      <div class="feature-text">
-                        <h3 class="feature-title">MCP Server Support</h3>
-                        <p class="feature-description">Complete Model Context Protocol server management</p>
+                        <h3 class="feature-title" data-i18n="feature-mcp-title"></h3>
+                        <p class="feature-description" data-i18n="feature-mcp-desc"></p>
                     </div>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">💾</div>
                      <div class="feature-text">
-                        <h3 class="feature-title">Conversation History</h3>
-                        <p class="feature-description">Automatic conversation history and session management</p>
+                        <h3 class="feature-title" data-i18n="feature-history-title"></h3>
+                        <p class="feature-description" data-i18n="feature-history-desc"></p>
                     </div>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🎨</div>
                      <div class="feature-text">
-                        <h3 class="feature-title">VS Code Native</h3>
-                        <p class="feature-description">Claude Code integrated directly into VS Code with native theming and sidebar support</p>
+                        <h3 class="feature-title" data-i18n="feature-native-title"></h3>
+                        <p class="feature-description" data-i18n="feature-native-desc"></p>
                     </div>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🧠</div>
                      <div class="feature-text">
-                        <h3 class="feature-title">Plan and Thinking modes</h3>
-                        <p class="feature-description">Plan First and configurable Thinking modes for better results</p>
+                        <h3 class="feature-title" data-i18n="feature-plan-title"></h3>
+                        <p class="feature-description" data-i18n="feature-plan-desc"></p>
                     </div>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">⚡</div>
                      <div class="feature-text">
-                        <h3 class="feature-title">Smart File/Image Context</h3>
-                        <p class="feature-description">Reference any file, paste images or screenshots</p>
+                        <h3 class="feature-title" data-i18n="feature-context-title"></h3>
+                        <p class="feature-description" data-i18n="feature-context-desc"></p>
                     </div>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🤖</div>
                      <div class="feature-text">
-                        <h3 class="feature-title">Model Selection</h3>
-                        <p class="feature-description">Choose between Opus, Sonnet, or Default</p>
+                        <h3 class="feature-title" data-i18n="feature-model-title"></h3>
+                        <p class="feature-description" data-i18n="feature-model-desc"></p>
                     </div>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🐧</div>
                      <div class="feature-text">
-                        <h3 class="feature-title">Windows/WSL Support</h3>
-                        <p class="feature-description">Full native Windows and WSL support</p>
+                        <h3 class="feature-title" data-i18n="feature-wsl-title"></h3>
+                        <p class="feature-description" data-i18n="feature-wsl-desc"></p>
                     </div>
                 </div>
             </div>
@@ -832,132 +852,132 @@
     <section class="key-features" id="key-features">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">🌟 Key Features <span class="badge">V1.0</span></h2>
-                <p class="section-subtitle">Discover the comprehensive set of tools that make Claude Code Chat the ultimate development companion</p>
+                <h2 class="section-title" data-i18n="key-features-title"></h2>
+                <p class="section-subtitle" data-i18n="key-features-subtitle"></p>
             </div>
             <div class="key-features-list">
                 <div class="key-feature-item">
-                    <h3>💬 Beautiful Chat Graphical Interface</h3>
+                    <h3 data-i18n="kf-chat-title"></h3>
                     <ul>
-                        <li>No terminal required - everything through the UI</li>
-                        <li>Real-time streaming responses with typing indicators</li>
-                        <li>One-click message copying with visual feedback</li>
-                        <li>Enhanced markdown support with syntax highlighting</li>
-                        <li>Auto-resizing input that grows with your content</li>
-                        <li>Copy-to-clipboard for code blocks</li>
+                        <li data-i18n="kf-chat-li1"></li>
+                        <li data-i18n="kf-chat-li2"></li>
+                        <li data-i18n="kf-chat-li3"></li>
+                        <li data-i18n="kf-chat-li4"></li>
+                        <li data-i18n="kf-chat-li5"></li>
+                        <li data-i18n="kf-chat-li6"></li>
                     </ul>
                 </div>
                 <div class="key-feature-item">
-                    <h3>⏪ Checkpoint & Session Management</h3>
+                    <h3 data-i18n="kf-checkpoint-title"></h3>
                     <ul>
-                        <li>Restore Checkpoints - Instantly undo changes and restore to any previous state</li>
-                        <li>Automatic Git-based backup system for safe experimentation</li>
-                        <li>Browse and restore from any conversation checkpoint</li>
-                        <li>Automatic conversation saving and restoration</li>
-                        <li>Real-time cost and token tracking</li>
-                        <li>Session statistics and performance metrics</li>
+                        <li data-i18n="kf-checkpoint-li1"></li>
+                        <li data-i18n="kf-checkpoint-li2"></li>
+                        <li data-i18n="kf-checkpoint-li3"></li>
+                        <li data-i18n="kf-checkpoint-li4"></li>
+                        <li data-i18n="kf-checkpoint-li5"></li>
+                        <li data-i18n="kf-checkpoint-li6"></li>
                     </ul>
                 </div>
                 <div class="key-feature-item">
                      <div class="new-badge badge-top-right">NEW IN V1.0</div>
-                    <h3>🔌 MCP Server Management</h3>
+                    <h3 data-i18n="kf-mcp-title"></h3>
                     <ul>
-                        <li>Popular Servers Gallery - One-click installation of common MCP servers</li>
-                        <li>Custom Server Creation - Build and configure your own MCP servers</li>
-                        <li>Server Management - Edit, delete, enable/disable servers through UI</li>
-                        <li>Automatic Integration - Seamless permissions and tool integration</li>
-                        <li>Cross-platform Support - Full WSL compatibility with path conversion</li>
+                        <li data-i18n="kf-mcp-li1"></li>
+                        <li data-i18n="kf-mcp-li2"></li>
+                        <li data-i18n="kf-mcp-li3"></li>
+                        <li data-i18n="kf-mcp-li4"></li>
+                        <li data-i18n="kf-mcp-li5"></li>
                     </ul>
                 </div>
                 <div class="key-feature-item">
                     <div class="new-badge badge-top-right">NEW IN V1.0</div>
-                    <h3>🔒 Advanced Permissions System</h3>
+                    <h3 data-i18n="kf-perm-title"></h3>
                     <ul>
-                        <li>Interactive Permission Dialogs - Detailed tool information with command previews</li>
-                        <li>Always Allow Functionality - Smart command pattern matching for common tools (npm, git, docker)</li>
-                        <li>YOLO Mode - Skip all permission checks for power users</li>
-                        <li>Workspace Permissions - Granular control over what tools can execute</li>
-                        <li>Real-time Permission Management - Add/remove permissions through intuitive UI</li>
+                        <li data-i18n="kf-perm-li1"></li>
+                        <li data-i18n="kf-perm-li2"></li>
+                        <li data-i18n="kf-perm-li3"></li>
+                        <li data-i18n="kf-perm-li4"></li>
+                        <li data-i18n="kf-perm-li5"></li>
                     </ul>
                 </div>
                 <div class="key-feature-item">
                     <div class="new-badge badge-top-right">NEW IN V1.0</div>
-                    <h3>🖼️ Image & Clipboard Support</h3>
+                    <h3 data-i18n="kf-img-title"></h3>
                     <ul>
-                        <li>Drag & Drop Images - Simply drag images directly into the chat</li>
-                        <li>Clipboard Paste - Press Ctrl+V to paste screenshots and copied images</li>
-                        <li>Multiple Image Selection - Choose multiple images through VS Code's file picker</li>
-                        <li>Organized Storage - Automatic organization in .claude/claude-code-chat-images/</li>
-                        <li>Format Support - PNG, JPG, JPEG, GIF, SVG, WebP, BMP formats</li>
+                        <li data-i18n="kf-img-li1"></li>
+                        <li data-i18n="kf-img-li2"></li>
+                        <li data-i18n="kf-img-li3"></li>
+                        <li data-i18n="kf-img-li4"></li>
+                        <li data-i18n="kf-img-li5"></li>
                     </ul>
                 </div>
                 <div class="key-feature-item">
                     <div class="new-badge badge-top-right">NEW IN V1.0</div>
-                    <h3>📱 Sidebar Integration</h3>
+                    <h3 data-i18n="kf-sidebar-title"></h3>
                     <ul>
-                        <li>Native VS Code Sidebar - Full chat functionality in the sidebar panel</li>
-                        <li>Smart Panel Management - Automatic switching between main and sidebar views</li>
-                        <li>Persistent Sessions - State maintained across panel switches</li>
-                        <li>Activity Bar Integration - Quick access from VS Code's activity bar</li>
+                        <li data-i18n="kf-sidebar-li1"></li>
+                        <li data-i18n="kf-sidebar-li2"></li>
+                        <li data-i18n="kf-sidebar-li3"></li>
+                        <li data-i18n="kf-sidebar-li4"></li>
                     </ul>
                 </div>
                 <div class="key-feature-item">
-                    <h3>📁 Smart File Integration</h3>
+                    <h3 data-i18n="kf-file-title"></h3>
                     <ul>
-                        <li>Type @ to instantly search and reference workspace files</li>
-                        <li>Image attachments via file browser and copy-paste screeshots</li>
-                        <li>Lightning-fast file search across your entire project</li>
-                        <li>Seamless context preservation for multi-file discussions</li>
+                        <li data-i18n="kf-file-li1"></li>
+                        <li data-i18n="kf-file-li2"></li>
+                        <li data-i18n="kf-file-li3"></li>
+                        <li data-i18n="kf-file-li4"></li>
                     </ul>
                 </div>
                 <div class="key-feature-item">
-                    <h3>🛠️ Tool Management</h3>
+                    <h3 data-i18n="kf-tool-title"></h3>
                     <ul>
-                        <li>Visual dashboard showing all available Claude Code tools</li>
-                        <li>Real-time tool execution with formatted results</li>
-                        <li>Process control - start, stop, and monitor operations</li>
-                        <li>Smart permission system for secure tool execution</li>
+                        <li data-i18n="kf-tool-li1"></li>
+                        <li data-i18n="kf-tool-li2"></li>
+                        <li data-i18n="kf-tool-li3"></li>
+                        <li data-i18n="kf-tool-li4"></li>
                     </ul>
                 </div>
                 <div class="key-feature-item">
-                    <h3>🎨 VS Code Integration</h3>
+                    <h3 data-i18n="kf-vscode-title"></h3>
                     <ul>
-                        <li>Native theming that matches your editor</li>
-                        <li>Status bar integration with connection status</li>
-                        <li>Activity bar panel for quick access</li>
-                        <li>Responsive design for any screen size</li>
+                        <li data-i18n="kf-vscode-li1"></li>
+                        <li data-i18n="kf-vscode-li2"></li>
+                        <li data-i18n="kf-vscode-li3"></li>
+                        <li data-i18n="kf-vscode-li4"></li>
                     </ul>
                 </div>
                 <div class="key-feature-item">
-                    <h3>🤖 Model Selection</h3>
+                    <h3 data-i18n="kf-model-title"></h3>
                     <ul>
-                        <li>Opus - Most capable model for complex tasks requiring deep reasoning</li>
-                        <li>Sonnet - Balanced model offering great performance for most use cases</li>
-                        <li>Default - Uses your configured model setting</li>
-                        <li>Model preference persists across sessions and is saved automatically</li>
-                        <li>Easy switching via dropdown selector in the chat interface</li>
-                        <li>Visual confirmation when switching between models</li>
-                        <li>One-click model configuration through integrated terminal</li>
+                        <li data-i18n="kf-model-li1"></li>
+                        <li data-i18n="kf-model-li2"></li>
+                        <li data-i18n="kf-model-li3"></li>
+                        <li data-i18n="kf-model-li4"></li>
+                        <li data-i18n="kf-model-li5"></li>
+                        <li data-i18n="kf-model-li6"></li>
+                        <li data-i18n="kf-model-li7"></li>
                     </ul>
                 </div>
                 <div class="key-feature-item">
-                    <h3>⚡ Slash Commands Integration</h3>
+                    <h3 data-i18n="kf-slash-title"></h3>
                     <ul>
-                        <li>Slash Commands Modal - Type "/" to access all Claude Code commands instantly</li>
-                        <li>19+ Built-in Commands - /cost, /status, /config, /help, /memory, /review, and more</li>
-                        <li>Custom Command Support - Execute any Claude Code command with session context</li>
-                        <li>Session-Aware Execution - All commands run with current conversation context</li>
-                        <li>Terminal Integration - Commands open directly in VS Code terminal with WSL support</li>
+                        <li data-i18n="kf-slash-li1"></li>
+                        <li data-i18n="kf-slash-li2"></li>
+                        <li data-i18n="kf-slash-li3"></li>
+                        <li data-i18n="kf-slash-li4"></li>
+                        <li data-i18n="kf-slash-li5"></li>
                     </ul>
                 </div>
                 <div class="key-feature-item">
-                    <h3>🧠 Advanced AI Modes</h3>
+                    <h3 data-i18n="kf-ai-title"></h3>
                     <ul>
-                        <li>Plan First Mode - Toggle to make Claude plan before implementing changes</li>
-                        <li>Thinking Mode - Configurable intensity levels (Think, Think Hard, Think Harder, Ultrathink)</li>
-                        <li>Mode Toggles - Simple switches above the text input area</li>
-                        <li>Intelligent Prompting - Different prompts based on selected thinking intensity</li>
-                        <li>Token Awareness - Higher thinking levels consume more tokens but provide deeper reasoning</li>
+                        <li data-i18n="kf-ai-li1"></li>
+                        <li data-i18n="kf-ai-li2"></li>
+                        <li data-i18n="kf-ai-li3"></li>
+                        <li data-i18n="kf-ai-li4"></li>
+                        <li data-i18n="kf-ai-li5"></li>
                     </ul>
                 </div>
             </div>
@@ -967,62 +987,48 @@
     <section id="getting-started">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">🚀 Getting Started</h2>
-                <p class="section-subtitle">Set up Claude Code Chat in minutes and start enhancing your development workflow</p>
+                <h2 class="section-title" data-i18n="getting-title"></h2>
+                <p class="section-subtitle" data-i18n="getting-subtitle"></p>
             </div>
             <div class="configuration-section">
                 <div class="config-card">
-                    <h3>Prerequisites</h3>
+                    <h3 data-i18n="getting-prereq-title"></h3>
                     <ul>
-                        <li>VS Code 1.80+ - Latest version recommended</li>
-                        <li>Claude Code CLI - Install from Anthropic</li>
-                        <li>Active Claude API or subscription - API or Pro/Max plan</li>
+                        <li data-i18n="getting-prereq-li1"></li>
+                        <li data-i18n="getting-prereq-li2"></li>
+                        <li data-i18n="getting-prereq-li3"></li>
                     </ul>
-                    
-                    <h3 style="margin-top: 2rem;">Installation</h3>
-                    <p><strong>Install from VS Code Marketplace</strong></p>
-                    <pre>ext install claude-code-chat</pre>
-                    
-                    <p><strong>Or install manually</strong></p>
+                    <h3 style="margin-top: 2rem;" data-i18n="getting-install-title"></h3>
+                    <p><strong data-i18n="getting-install-market"></strong></p>
+                    <pre data-i18n="getting-install-market-cmd"></pre>
+                    <p><strong data-i18n="getting-install-manual"></strong></p>
                     <ol>
-                        <li>Download the .vsix file from releases</li>
-                        <li>Run <code>code --install-extension claude-code-chat-x.x.x.vsix</code></li>
+                        <li data-i18n="getting-install-manual-li1"></li>
+                        <li data-i18n="getting-install-manual-li2"></li>
                     </ol>
                 </div>
                 
                 <div class="config-card">
-                    <h3>Open Claude Code Chat</h3>
+                    <h3 data-i18n="getting-open-title"></h3>
                     <ul>
-                        <li>Press Ctrl+Shift+C (or Cmd+Shift+C on Mac)</li>
-                        <li>Or click the Claude icon in your status bar</li>
-                        <li>Or use Command Palette: Claude Code: Open Chat</li>
+                        <li data-i18n="getting-open-li1"></li>
+                        <li data-i18n="getting-open-li2"></li>
+                        <li data-i18n="getting-open-li3"></li>
                     </ul>
                     
-                    <h3 style="margin-top: 2rem;">Keyboard Shortcuts</h3>
+                    <h3 style="margin-top: 2rem;" data-i18n="getting-shortcut-title"></h3>
                     <table>
                         <thead>
                             <tr>
-                                <th>Shortcut</th>
-                                <th>Action</th>
+                                <th data-i18n="getting-shortcut-th1"></th>
+                                <th data-i18n="getting-shortcut-th2"></th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Ctrl+Shift+C</td>
-                                <td>Open Claude Code Chat</td>
-                            </tr>
-                            <tr>
-                                <td>Enter</td>
-                                <td>Send message</td>
-                            </tr>
-                            <tr>
-                                <td>@</td>
-                                <td>Open file picker</td>
-                            </tr>
-                            <tr>
-                                <td>/</td>
-                                <td>Open slash commands modal</td>
-                            </tr>
+                            <tr><td data-i18n="getting-shortcut-row1-1"></td><td data-i18n="getting-shortcut-row1-2"></td></tr>
+                            <tr><td data-i18n="getting-shortcut-row2-1"></td><td data-i18n="getting-shortcut-row2-2"></td></tr>
+                            <tr><td data-i18n="getting-shortcut-row3-1"></td><td data-i18n="getting-shortcut-row3-2"></td></tr>
+                            <tr><td data-i18n="getting-shortcut-row4-1"></td><td data-i18n="getting-shortcut-row4-2"></td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -1033,84 +1039,51 @@
     <section class="usage-examples" id="usage">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">💡 Usage Examples</h2>
-                <p class="section-subtitle">See how Claude Code Chat can transform your development experience</p>
+                <h2 class="section-title" data-i18n="usage-title"></h2>
+                <p class="section-subtitle" data-i18n="usage-subtitle"></p>
             </div>
-            
             <div class="example-card">
-                <h3 class="example-title">🔥 Code Review & Refactoring</h3>
+                <h3 class="example-title" data-i18n="usage-example1-title"></h3>
                 <div class="example-message user-message">
-                    <span class="message-label">You:</span>
-                    @src/components/UserProfile.tsx Can you review this component and suggest improvements?
+                    <span class="message-label" data-i18n="usage-example1-user-label"></span>
+                    <span data-i18n="usage-example1-user-msg"></span>
                 </div>
                 <div class="example-message claude-message">
-                    <span class="message-label">Claude:</span>
-                    I'll analyze your UserProfile component. Looking at the code, here are my recommendations:
-                    <ol>
-                        <li><strong>Performance Optimization:</strong> Add React.memo() to prevent unnecessary re-renders</li>
-                        <li><strong>TypeScript Enhancement:</strong> The props interface could be more specific</li>
-                        <li><strong>Accessibility:</strong> Missing ARIA labels for screen readers</li>
-                    </ol>
-                    [Detailed analysis with code examples follows...]
+                    <span class="message-label" data-i18n="usage-example1-claude-label"></span>
+                    <span data-i18n="usage-example1-claude-msg"></span>
                 </div>
             </div>
-            
             <div class="example-card">
-                <h3 class="example-title">📊 Project Analysis</h3>
+                <h3 class="example-title" data-i18n="usage-example2-title"></h3>
                 <div class="example-message user-message">
-                    <span class="message-label">You:</span>
-                    Analyze the overall architecture of my project and identify potential issues
+                    <span class="message-label" data-i18n="usage-example2-user-label"></span>
+                    <span data-i18n="usage-example2-user-msg"></span>
                 </div>
                 <div class="example-message claude-message">
-                    <span class="message-label">Claude:</span>
-                    I'll examine your project structure and identify areas for improvement:
-                    <p>🏗️ <strong>Architecture Overview</strong></p>
-                    <ul>
-                        <li>React frontend with TypeScript</li>
-                        <li>Node.js backend with Express</li>
-                        <li>MongoDB database layer</li>
-                    </ul>
-                    <p>⚠️ <strong>Identified Issues</strong></p>
-                    <ul>
-                        <li>Missing error boundaries in React components</li>
-                        <li>Database queries lack proper indexing</li>
-                        <li>API routes missing input validation</li>
-                    </ul>
-                    [Detailed recommendations with implementation examples...]
+                    <span class="message-label" data-i18n="usage-example2-claude-label"></span>
+                    <span data-i18n="usage-example2-claude-msg"></span>
                 </div>
             </div>
-            
             <div class="example-card">
-                <h3 class="example-title">🐛 Debugging Assistant</h3>
+                <h3 class="example-title" data-i18n="usage-example3-title"></h3>
                 <div class="example-message user-message">
-                    <span class="message-label">You:</span>
-                    I'm getting a strange error in my API. Here's the stack trace: [paste error]
+                    <span class="message-label" data-i18n="usage-example3-user-label"></span>
+                    <span data-i18n="usage-example3-user-msg"></span>
                 </div>
                 <div class="example-message claude-message">
-                    <span class="message-label">Claude:</span>
-                    Looking at this stack trace, the issue appears to be a race condition in your async middleware. Here's what's happening:
-                    <ol>
-                        <li><strong>Root Cause:</strong> Multiple requests are modifying shared state</li>
-                        <li><strong>Solution:</strong> Implement proper request isolation</li>
-                        <li><strong>Prevention:</strong> Add comprehensive error handling</li>
-                    </ol>
-                    [Step-by-step debugging guide follows...]
+                    <span class="message-label" data-i18n="usage-example3-claude-label"></span>
+                    <span data-i18n="usage-example3-claude-msg"></span>
                 </div>
             </div>
-            
             <div class="example-card">
-                <h3 class="example-title">⏪ Safe Experimentation with Checkpoints</h3>
+                <h3 class="example-title" data-i18n="usage-example4-title"></h3>
                 <div class="example-message user-message">
-                    <span class="message-label">You:</span>
-                    Can you refactor this entire component to use hooks instead of class components?
+                    <span class="message-label" data-i18n="usage-example4-user-label"></span>
+                    <span data-i18n="usage-example4-user-msg"></span>
                 </div>
                 <div class="example-message claude-message">
-                    <span class="message-label">Claude:</span>
-                    I'll refactor your component to use React hooks. Don't worry - I'll create a checkpoint first so you can easily restore if needed.
-                    <p>[Creates automatic checkpoint]</p>
-                    <p>Here's the refactored component using hooks:</p>
-                    <p>[Shows the new implementation]</p>
-                    <p>If you want to revert these changes, just click "Restore Checkpoint" to go back to your original code instantly.</p>
+                    <span class="message-label" data-i18n="usage-example4-claude-label"></span>
+                    <span data-i18n="usage-example4-claude-msg"></span>
                 </div>
             </div>
         </div>
@@ -1119,72 +1092,67 @@
     <section id="configuration">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">⚙️ Configuration</h2>
-                <p class="section-subtitle">Customize Claude Code Chat to fit your development environment</p>
+                <h2 class="section-title" data-i18n="config-title"></h2>
+                <p class="section-subtitle" data-i18n="config-subtitle"></p>
             </div>
             <div class="config-card">
                 <div class="config-card-wrapper">
                     <div class="config-card-split-left">
-                         <h3>WSL Configuration (Windows Users)</h3>
-                         <p>If you're using Claude Code through WSL (Windows Subsystem for Linux), you can configure the extension to use WSL:</p>
+                         <h3 data-i18n="config-wsl-title"></h3>
+                         <p data-i18n="config-wsl-desc"></p>
                          <ol>
-                            <li>Open VS Code Settings (Ctrl+, or Cmd+,)</li>
-                            <li>Search for "Claude Code Chat"</li>
-                            <li>Configure these settings:</li>
+                            <li data-i18n="config-wsl-li1"></li>
+                            <li data-i18n="config-wsl-li2"></li>
+                            <li data-i18n="config-wsl-li3"></li>
                         </ol>
                         <ul>
-                            <li><strong>Claude Code Chat: WSL Enabled</strong> - Enable WSL integration</li>
-                            <li><strong>Claude Code Chat: WSL Distro</strong> - Your WSL distribution name (e.g., Ubuntu, Debian)</li>
-                            <li><strong>Claude Code Chat: WSL Node Path</strong> - Path to Node.js in WSL (default: /usr/bin/node)</li>
-                            <li><strong>Claude Code Chat: WSL Claude Path</strong> - Path to Claude in WSL (default: /usr/local/bin/claude)</li>
+                            <li data-i18n="config-wsl-ul1"></li>
+                            <li data-i18n="config-wsl-ul2"></li>
+                            <li data-i18n="config-wsl-ul3"></li>
+                            <li data-i18n="config-wsl-ul4"></li>
                         </ul>
                     </div>
                     <div class="config-card-split-right">
-                        <p>Example configuration in settings.json:</p>
-                        <pre>{
-  "claudeCodeChat.wsl.enabled": true,
-  "claudeCodeChat.wsl.distro": "Ubuntu",
-  "claudeCodeChat.wsl.nodePath": "/usr/bin/node",
-  "claudeCodeChat.wsl.claudePath": "/usr/local/bin/claude"
-}</pre>
+                        <p data-i18n="config-wsl-example"></p>
+                        <pre data-i18n="config-wsl-example-json"></pre>
                     </div>
                 </div>
             </div>
             
             <div class="tips-section">
-                <h3>🎯 Pro Tips & Tricks</h3>
+                <h3 data-i18n="tips-title"></h3>
                 <div class="tips-grid">
                     <div class="tip-category">
-                        <h3>🔥 File Context Magic</h3>
+                        <h3 data-i18n="tips-file-title"></h3>
                         <ul>
-                            <li>Type @ followed by your search term to quickly reference files</li>
-                            <li>Use @src/ to narrow down to specific directories</li>
-                            <li>Reference multiple files in one message for cross-file analysis</li>
-                            <li><span class="highlight">NEW:</span> Copy-paste images directly into chat for visual context</li>
-                            <li><span class="highlight">NEW:</span> Paste screenshots with Ctrl+V for instant visual communication</li>
+                            <li data-i18n="tips-file-li1"></li>
+                            <li data-i18n="tips-file-li2"></li>
+                            <li data-i18n="tips-file-li3"></li>
+                            <li data-i18n="tips-file-li4"></li>
+                            <li data-i18n="tips-file-li5"></li>
                         </ul>
                     </div>
                     <div class="tip-category">
-                        <h3>⚡ Productivity Boosters</h3>
+                        <h3 data-i18n="tips-prod-title"></h3>
                         <ul>
-                            <li>Creates checkpoints automatically before changes for safe experimentation</li>
-                            <li>Restore instantly if changes don't work out as expected</li>
-                            <li><span class="highlight">NEW:</span> Permission system prevents accidental tool execution</li>
-                            <li><span class="highlight">NEW:</span> YOLO mode for power users who want speed over safety</li>
-                            <li>Use the stop button to cancel long-running operations</li>
-                            <li>Copy message contents to reuse Claude's responses</li>
-                            <li>Open history panel to reference previous conversations</li>
-                            <li><span class="highlight">NEW:</span> Sidebar integration for multi-panel workflow</li>
+                            <li data-i18n="tips-prod-li1"></li>
+                            <li data-i18n="tips-prod-li2"></li>
+                            <li data-i18n="tips-prod-li3"></li>
+                            <li data-i18n="tips-prod-li4"></li>
+                            <li data-i18n="tips-prod-li5"></li>
+                            <li data-i18n="tips-prod-li6"></li>
+                            <li data-i18n="tips-prod-li7"></li>
+                            <li data-i18n="tips-prod-li8"></li>
                         </ul>
                     </div>
                     <div class="tip-category">
-                        <h3>🎨 Interface Customization</h3>
+                        <h3 data-i18n="tips-ui-title"></h3>
                         <ul>
-                            <li>The UI automatically adapts to your VS Code theme</li>
-                            <li>Messages are color-coded: Green for you, Blue for Claude</li>
-                            <li>Hover over messages to reveal the copy button</li>
-                            <li><span class="highlight">NEW:</span> Enhanced code block rendering with syntax highlighting</li>
-                            <li><span class="highlight">NEW:</span> Copy-to-clipboard functionality for code blocks</li>
+                            <li data-i18n="tips-ui-li1"></li>
+                            <li data-i18n="tips-ui-li2"></li>
+                            <li data-i18n="tips-ui-li3"></li>
+                            <li data-i18n="tips-ui-li4"></li>
+                            <li data-i18n="tips-ui-li5"></li>
                         </ul>
                     </div>
                 </div>
@@ -1195,44 +1163,42 @@
     <section>
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">🔧 Advanced Features</h2>
-                <p class="section-subtitle">Powerful capabilities for professional developers</p>
+                <h2 class="section-title" data-i18n="advanced-title"></h2>
+                <p class="section-subtitle" data-i18n="advanced-subtitle"></p>
             </div>
             <div class="configuration-section">
                 <div class="config-card">
-                    <h3>🛠️ Tool Integration</h3>
-                    <p>Claude Code Chat provides secure access to all Claude Code tools:</p>
+                    <h3 data-i18n="advanced-tool-title"></h3>
+                    <p data-i18n="advanced-tool-desc"></p>
                     <ul>
-                        <li><strong>Bash</strong> - Execute shell commands with permission controls</li>
-                        <li><strong>File Operations</strong> - Read, write, and edit files</li>
-                        <li><strong>Search</strong> - Grep and glob pattern matching across workspace</li>
-                        <li><strong>Web</strong> - Fetch and search web content</li>
-                        <li><strong>Multi-edit</strong> - Batch file modifications</li>
-                        <li><strong>MCP Servers</strong> - Extend functionality with Model Context Protocol servers</li>
-                        <li><strong>Permissions System</strong> - Granular control over tool execution for security</li>
+                        <li data-i18n="advanced-tool-li1"></li>
+                        <li data-i18n="advanced-tool-li2"></li>
+                        <li data-i18n="advanced-tool-li3"></li>
+                        <li data-i18n="advanced-tool-li4"></li>
+                        <li data-i18n="advanced-tool-li5"></li>
+                        <li data-i18n="advanced-tool-li6"></li>
+                        <li data-i18n="advanced-tool-li7"></li>
                     </ul>
-                    
-                    <h3 style="margin-top: 2rem;">📊 Analytics & Monitoring</h3>
+                    <h3 style="margin-top: 2rem;" data-i18n="advanced-analytics-title"></h3>
                     <ul>
-                        <li>Real-time cost tracking - Monitor your API usage</li>
-                        <li>Token consumption - See input/output token counts</li>
-                        <li>Response timing - Track performance metrics</li>
-                        <li>Session statistics - Comprehensive usage analytics</li>
+                        <li data-i18n="advanced-analytics-li1"></li>
+                        <li data-i18n="advanced-analytics-li2"></li>
+                        <li data-i18n="advanced-analytics-li3"></li>
+                        <li data-i18n="advanced-analytics-li4"></li>
                     </ul>
                 </div>
                 <div class="config-card">
-                    <h3>⏪ Checkpoint System</h3>
+                    <h3 data-i18n="advanced-checkpoint-title"></h3>
                     <ul>
-                        <li>Instant restoration - One-click restore to any previous state</li>
-                        <li>Conversation checkpoints - Every change creates a restore point</li>
-                        <li>Visual timeline - See and navigate through all your project states</li>
+                        <li data-i18n="advanced-checkpoint-li1"></li>
+                        <li data-i18n="advanced-checkpoint-li2"></li>
+                        <li data-i18n="advanced-checkpoint-li3"></li>
                     </ul>
-                    
-                    <h3 style="margin-top: 2rem;">🔄 Conversation History</h3>
+                    <h3 style="margin-top: 2rem;" data-i18n="advanced-history-title"></h3>
                     <ul>
-                        <li>Automatic saving - Every conversation is preserved</li>
-                        <li>Smart restoration - Resume exactly where you left off</li>
-                        <li>Switch between chats - Easily check and switch to previous conversations</li>
+                        <li data-i18n="advanced-history-li1"></li>
+                        <li data-i18n="advanced-history-li2"></li>
+                        <li data-i18n="advanced-history-li3"></li>
                     </ul>
                 </div>
             </div>
@@ -1242,41 +1208,35 @@
     <section>
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">🤝 Contributing</h2>
-                <p class="section-subtitle">Join our community and help improve Claude Code Chat</p>
+                <h2 class="section-title" data-i18n="contrib-title"></h2>
+                <p class="section-subtitle" data-i18n="contrib-subtitle"></p>
             </div>
             <div class="configuration-section">
                 <div class="config-card">
-                    <h3>How to Contribute</h3>
-                    <p>We welcome contributions! Here's how you can help:</p>
+                    <h3 data-i18n="contrib-how-title"></h3>
+                    <p data-i18n="contrib-how-desc"></p>
                     <ul>
-                        <li>🐛 Report Bugs - Use our issue tracker</li>
-                        <li>💡 Suggest Features - Share your ideas</li>
-                        <li>🔧 Submit PRs - Help us improve the codebase</li>
-                        <li>📚 Improve Docs - Make the documentation better</li>
+                        <li data-i18n="contrib-bug"></li>
+                        <li data-i18n="contrib-idea"></li>
+                        <li data-i18n="contrib-pr"></li>
+                        <li data-i18n="contrib-doc"></li>
                     </ul>
-                    
-                    <h3 style="margin-top: 2rem;">Development Setup</h3>
-                    <pre>git clone https://github.com/andrepimenta/claude-code-chat
-cd claude-code-chat
-npm install
-Click "F5" to run the extension or access the "Run and Debug" section in VSCode</pre>
+                    <h3 style="margin-top: 2rem;" data-i18n="contrib-dev-title"></h3>
+                    <pre data-i18n="contrib-dev-pre"></pre>
                 </div>
                 
                 <div class="config-card">
-                    <h3>📝 License</h3>
-                    <p>See the LICENSE file for details.</p>
-                    
-                    <h3 style="margin-top: 2rem;">🙏 Acknowledgments</h3>
+                    <h3 data-i18n="contrib-license-title"></h3>
+                    <p data-i18n="contrib-license-desc"></p>
+                    <h3 style="margin-top: 2rem;" data-i18n="contrib-ack-title"></h3>
                     <ul>
-                        <li>Anthropic - For creating the amazing Claude AI and more specifically the Claude Code SDK</li>
-                        <li>VS Code Team - For the incredible extension platform</li>
-                        <li>Our Community - For feedback, suggestions, and contributions</li>
+                        <li data-i18n="contrib-ack-li1"></li>
+                        <li data-i18n="contrib-ack-li2"></li>
+                        <li data-i18n="contrib-ack-li3"></li>
                     </ul>
-                    
-                    <h3 style="margin-top: 2rem;">📞 Support</h3>
-                    <p>Need help? We've got you covered:</p>
-                    <p>🐛 Issues: GitHub Issues</p>
+                    <h3 style="margin-top: 2rem;" data-i18n="contrib-support-title"></h3>
+                    <p data-i18n="contrib-support-desc"></p>
+                    <p data-i18n="contrib-support-issue"></p>
                 </div>
             </div>
         </div>
@@ -1285,282 +1245,43 @@ Click "F5" to run the extension or access the "Run and Debug" section in VSCode<
     <footer>
         <div class="container">
             <div class="footer-content">
-                <p>© 2025 Claude Code Chat. All rights reserved.</p>
-                <p>Built by Claude Code for Claude Code.</p>
-                <p>Claude is a trademark of Anthropic.VS Code is a trademark of Microsoft Corporation. This project is not officially affiliated with Anthropic or Microsoft.
+                <p data-i18n="footer-copyright"></p>
+                <p data-i18n="footer-builtby"></p>
+                <p data-i18n="footer-disclaimer"></p>
             </div>
         </div>
     </footer>
 
+    <script src="lang.js"></script>
     <script>
-        // Language switching functionality
-        const translations = {
-            en: {
-                "nav-features": "Features",
-                "nav-key-features": "Key Features",
-                "nav-getting-started": "Getting Started",
-                "nav-usage": "Usage",
-                "nav-configuration": "Configuration",
-                "hero-badge": "VS Code Extension",
-                "hero-title": "🚀 Claude Code Chat",
-                "hero-tagline": "Beautiful Claude Code Chat Interface for VS Code",
-                "hero-desc1": "Ditch the command line and experience Claude Code like never before. This extension brings a stunning chat interface directly into your editor, making AI assistance accessible, visual, and enjoyable.",
-                "hero-desc2": "🤖 Built by Claude Code for Claude Code - This extension was entirely developed using Claude Code itself. Claude Code created its own chat interface!",
-                "cta-button": "Get Started",
-                "why-choose-title": "✨ Why Choose Claude Code Chat?",
-                "why-choose-subtitle": "Experience the future of AI-assisted development with these powerful features",
-                "no-terminal-title": "No Terminal Required",
-                "no-terminal-desc": "Beautiful chat interface replaces command-line interactions",
-                "restore-title": "Restore Checkpoints",
-                "restore-desc": "Undo changes and restore code to any previous state",
-                "mcp-title": "MCP Server Support",
-                "mcp-desc": "Complete Model Context Protocol server management",
-                "history-title": "Conversation History",
-                "history-desc": "Automatic conversation history and session management",
-                "native-title": "VS Code Native",
-                "native-desc": "Claude Code integrated directly into VS Code with native theming and sidebar support",
-                "plan-title": "Plan and Thinking modes",
-                "plan-desc": "Plan First and configurable Thinking modes for better results",
-                "context-title": "Smart File/Image Context",
-                "context-desc": "Reference any file, paste images or screenshots",
-                "model-title": "Model Selection",
-                "model-desc": "Choose between Opus, Sonnet, or Default",
-                "wsl-title": "Windows/WSL Support",
-                "wsl-desc": "Full native Windows and WSL support",
-                "key-features-title": "🌟 Key Features",
-                "key-features-subtitle": "Discover the comprehensive set of tools that make Claude Code Chat the ultimate development companion"
-            },
-            zh: {
-                "nav-features": "功能",
-                "nav-key-features": "主要功能",
-                "nav-getting-started": "入门指南",
-                "nav-usage": "使用示例",
-                "nav-configuration": "配置",
-                "hero-badge": "VS Code 扩展",
-                "hero-title": "🚀 Claude Code Chat",
-                "hero-tagline": "VS Code 中的精美 Claude Code 聊天界面",
-                "hero-desc1": "告别命令行，以前所未有的方式体验 Claude Code。此扩展将令人惊叹的聊天界面直接带入您的编辑器，使 AI 辅助变得可访问、可视化且令人愉快。",
-                "hero-desc2": "🤖 由 Claude Code 为 Claude Code 构建 - 此扩展完全使用 Claude Code 本身开发。Claude Code 创建了自己的聊天界面！",
-                "cta-button": "开始使用",
-                "why-choose-title": "✨ 为什么选择 Claude Code Chat?",
-                "why-choose-subtitle": "通过这些强大功能体验 AI 支援开发的未来",
-                "no-terminal-title": "无需终端",
-                "no-terminal-desc": "美しいチャットインターフェースがコマンドライン操作を置き換えます",
-                "restore-title": "恢复检查点",
-                "restore-desc": "撤销更改并将代码恢复到任何先前状态",
-                "mcp-title": "MCP 服务器支持",
-                "mcp-desc": "完整的模型上下文协议服务器管理",
-                "history-title": "对话历史",
-                "history-desc": "自动会话历史和会话管理",
-                "native-title": "VS Code 原生",
-                "native-desc": "VS Codeに直接統合されたClaude Codeとネイティブテーマ、サイドバー対応",
-                "plan-title": "计划和思考模式",
-                "plan-desc": "先计划模式和可配置的思考模式でより良い結果を",
-                "context-title": "スマートファイル/画像コンテキスト",
-                "context-desc": "任意のファイルを参照、画像やスクリーンショットを貼り付け",
-                "model-title": "モデル選択",
-                "model-desc": "Opus、Sonnet、またはDefaultから選択",
-                "wsl-title": "Windows/WSL対応",
-                "wsl-desc": "完全なネイティブWindowsとWSL対応",
-                "key-features-title": "🌟 主要機能",
-                "key-features-subtitle": "Claude Code Chatを究極の開発コンパニオンにする包括的なツールセットを発見"
-            },
-            ja: {
-                "nav-features": "機能",
-                "nav-key-features": "主要機能",
-                "nav-getting-started": "はじめに",
-                "nav-usage": "使用例",
-                "nav-configuration": "設定",
-                "hero-badge": "VS Code 拡張機能",
-                "hero-title": "🚀 Claude Code Chat",
-                "hero-tagline": "VS Code用の美しいClaude Codeチャットインターフェース",
-                "hero-desc1": "コマンドラインを捨てて、Claude Codeをこれまでにない方法で体験しましょう。この拡張機能は、AIアシスタンスを視覚的で楽しいものにするために、エディタに直接素晴らしいチャットインターフェースを提供します。",
-                "hero-desc2": "🤖 Claude CodeがClaude Codeのために構築 - この拡張機能はClaude Code自体を使って完全に開発されました。Claude Codeが独自のチャットインターフェースを作成しました！",
-                "cta-button": "はじめる",
-                "why-choose-title": "✨ Claude Code Chatを選ぶ理由",
-                "why-choose-subtitle": "これらの強力な機能でAI支援開発の未来を体験",
-                "no-terminal-title": "ターミナル不要",
-                "no-terminal-desc": "美しいチャットインターフェースがコマンドライン操作を置き換えます",
-                "restore-title": "チェックポイントの復元",
-                "restore-desc": "変更を元に戻し、コードを以前の状態に復元",
-                "mcp-title": "MCPサーバー対応",
-                "mcp-desc": "完全なモデルコンテキストプロトコルサーバー管理",
-                "history-title": "会話履歴",
-                "history-desc": "自動会話履歴とセッション管理",
-                "native-title": "VS Codeネイティブ",
-                "native-desc": "VS Codeに直接統合されたClaude Codeとネイティブテーマ、サイドバー対応",
-                "plan-title": "プランと思考モード",
-                "plan-desc": "プランファーストと設定可能な思考モードでより良い結果を",
-                "context-title": "Intelligenter Datei/Bildkontext",
-                "context-desc": "Beliebige Dateien referenzieren, Bilder oder Screenshots einfügen",
-                "model-title": "Modellauswahl",
-                "model-desc": "Wählen Sie zwischen Opus, Sonnet oder Standard",
-                "wsl-title": "Windows/WSL対応",
-                "wsl-desc": "Vollständige native Windows und WSL Unterstützung",
-                "key-features-title": "🌟 主要機能",
-                "key-features-subtitle": "Claude Code Chatを究極の開発コンパニオンにする包括的なツールセットを発見"
-            },
-            fr: {
-                "nav-features": "Fonctionnalités",
-                "nav-key-features": "Fonctions Clés",
-                "nav-getting-started": "Commencer",
-                "nav-usage": "Exemples d'Utilisation",
-                "nav-configuration": "Configuration",
-                "hero-badge": "Extension VS Code",
-                "hero-title": "🚀 Claude Code Chat",
-                "hero-tagline": "Interface de Chat Claude Code Belle pour VS Code",
-                "hero-desc1": "Abandonnez la ligne de commande et expérimentez Claude Code comme jamais auparavant. Cette extension apporte une interface de chat époustouflante directement dans votre éditeur, rendant l'assistance IA accessible, visuelle et agréable.",
-                "hero-desc2": "🤖 Construit par Claude Code pour Claude Code - Cette extension a été entièrement développée en utilisant Claude Code lui-même. Claude Code a créé sa propre interface de chat !",
-                "cta-button": "Commencer",
-                "why-choose-title": "✨ Pourquoi Choisir Claude Code Chat ?",
-                "why-choose-subtitle": "Découvrez l'avenir du développement assisté par IA avec ces fonctionnalités puissantes",
-                "no-terminal-title": "Pas de Terminal Requis",
-                "no-terminal-desc": "Belle interface de chat remplace les interactions en ligne de commande",
-                "restore-title": "Restaurer les Points de Contrôle",
-                "restore-desc": "Annuler les modifications et restaurer le code à n'importe quel état précédent",
-                "mcp-title": "Support Serveur MCP",
-                "mcp-desc": "Gestion complète du serveur Protocol Contexte Modèle",
-                "history-title": "Historique des Conversations",
-                "history-desc": "Historique des conversations automatique et gestion des sessions",
-                "native-title": "Natif VS Code",
-                "native-desc": "Claude Code intégré directement dans VS Code avec thématisation native et support de la barre latérale",
-                "plan-title": "Modes Plan et Réflexion",
-                "plan-desc": "Modes Plan d'Abord et Réflexion configurables pour de meilleurs résultats",
-                "context-title": "Contexte Fichier/Image Intelligent",
-                "context-desc": "Référencer n'importe quel fichier, coller des images ou captures d'écran",
-                "model-title": "Sélection du Modèle",
-                "model-desc": "Choisir entre Opus, Sonnet ou Par Défaut",
-                "wsl-title": "Support Windows/WSL",
-                "wsl-desc": "Support complet Windows et WSL natif",
-                "key-features-title": "🌟 Fonctions Clés",
-                "key-features-subtitle": "Découvrez l'ensemble complet d'outils qui fait de Claude Code Chat le compagnon de développement ultime"
-            },
-            de: {
-                "nav-features": "Funktionen",
-                "nav-key-features": "Hauptfunktionen",
-                "nav-getting-started": "Erste Schritte",
-                "nav-usage": "Anwendungsbeispiele",
-                "nav-configuration": "Konfiguration",
-                "hero-badge": "VS Code Erweiterung",
-                "hero-title": "🚀 Claude Code Chat",
-                "hero-tagline": "Schöne Claude Code Chat Oberfläche für VS Code",
-                "hero-desc1": "Verabschieden Sie sich von der Befehlszeile und erleben Sie Claude Code wie nie zuvor. Diese Erweiterung bringt eine beeindruckende Chat-Oberfläche direkt in Ihren Editor, macht die KI-Unterstützung zugänglich, visuell und angenehm.",
-                "hero-desc2": "🤖 Erstellt von Claude Code für Claude Code - Diese Erweiterung wurde vollständig mit Claude Code selbst entwickelt. Claude Code hat seine eigene Chat-Oberfläche erstellt!",
-                "cta-button": "Loslegen",
-                "why-choose-title": "✨ Warum Claude Code Chat wählen?",
-                "why-choose-subtitle": "Erleben Sie die Zukunft der KI-unterstützten Entwicklung mit diesen leistungsstarken Funktionen",
-                "no-terminal-title": "Kein Terminal erforderlich",
-                "no-terminal-desc": "Schöne Chat-Oberfläche ersetzt Befehlszeilen-Interaktionen",
-                "restore-title": "Wiederherstellungspunkte",
-                "restore-desc": "Änderungen rückgängig machen und Code in jeden vorherigen Zustand zurückversetzen",
-                "mcp-title": "MCP Server Unterstützung",
-                "mcp-desc": "Vollständige Model Context Protocol Server Verwaltung",
-                "history-title": "Konversationsverlauf",
-                "history-desc": "Automatischer Konversationsverlauf und Sitzungsverwaltung",
-                "native-title": "VS Code Nativ",
-                "native-desc": "Claude Code direkt in VS Code integriert mit nativer Gestaltung und Seitenleistenunterstützung",
-                "plan-title": "Plan- und Denkmodi",
-                "plan-desc": "Plan zuerst und konfigurierbare Denkmodi für bessere Ergebnisse",
-                "context-title": "Intelligenter Datei/Bildkontext",
-                "context-desc": "Beliebige Dateien referenzieren, Bilder oder Screenshots einfügen",
-                "model-title": "Modellauswahl",
-                "model-desc": "Wählen Sie zwischen Opus, Sonnet oder Standard",
-                "wsl-title": "Windows/WSL Unterstützung",
-                "wsl-desc": "Vollständige native Windows und WSL Unterstützung",
-                "key-features-title": "🌟 Hauptfunktionen",
-                "key-features-subtitle": "Entdecken Sie den umfassenden Satz an Tools, der Claude Code Chat zum ultimativen Entwicklungsassistenten macht"
-            }
-        };
-
+        function bindSmoothScrollAnchors() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const targetId = this.getAttribute('href').slice(1);
+                    const target = document.getElementById(targetId);
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        }
         let currentLanguage = 'en';
-
         function changeLanguage(lang) {
             currentLanguage = lang;
             updateLanguage();
         }
-
         function updateLanguage() {
-            // Update navigation
-            document.querySelector('.nav-menu li:nth-child(1) a').textContent = translations[currentLanguage]["nav-features"] || "Features";
-            document.querySelector('.nav-menu li:nth-child(2) a').textContent = translations[currentLanguage]["nav-key-features"] || "Key Features";
-            document.querySelector('.nav-menu li:nth-child(3) a').textContent = translations[currentLanguage]["nav-getting-started"] || "Getting Started";
-            document.querySelector('.nav-menu li:nth-child(4) a').textContent = translations[currentLanguage]["nav-usage"] || "Usage";
-            document.querySelector('.nav-menu li:nth-child(5) a').textContent = translations[currentLanguage]["nav-configuration"] || "Configuration";
-            
-            // Update hero section
-            document.querySelector('.hero-badge').textContent = translations[currentLanguage]["hero-badge"] || "VS Code Extension";
-            document.querySelector('h1').textContent = translations[currentLanguage]["hero-title"] || "🚀 Claude Code Chat";
-            document.querySelector('.tagline').textContent = translations[currentLanguage]["hero-tagline"] || "Beautiful Claude Code Chat Interface for VS Code";
-            document.querySelectorAll('.hero-description')[0].textContent = translations[currentLanguage]["hero-desc1"] || "Ditch the command line and experience Claude Code like never before...";
-            document.querySelectorAll('.hero-description')[1].innerHTML = translations[currentLanguage]["hero-desc2"] || "<strong>🤖 Built by Claude Code for Claude Code</strong> - This extension was entirely developed using Claude Code itself...";
-            document.querySelector('.cta-button').textContent = translations[currentLanguage]["cta-button"] || "Get Started";
-            
-            // Update why choose section
-            document.querySelector('#features .section-title').textContent = translations[currentLanguage]["why-choose-title"] || "✨ Why Choose Claude Code Chat?";
-            document.querySelector('#features .section-subtitle').textContent = translations[currentLanguage]["why-choose-subtitle"] || "Experience the future of AI-assisted development with these powerful features";
-            
-            // Update feature cards
-            const featureTitles = [
-                "no-terminal-title", "restore-title", "mcp-title", "history-title", 
-                "native-title", "plan-title", "context-title", "model-title", "wsl-title"
-            ];
-            
-            const featureDescs = [
-                "no-terminal-desc", "restore-desc", "mcp-desc", "history-desc", 
-                "native-desc", "plan-desc", "context-desc", "model-desc", "wsl-desc"
-            ];
-            
-            const featureCards = document.querySelectorAll('.feature-card');
-            featureCards.forEach((card, index) => {
-                if (index < featureTitles.length) {
-                    const titleElement = card.querySelector('.feature-title');
-                    const descElement = card.querySelector('.feature-description');
-                    
-                    if (titleElement) {
-                        titleElement.textContent = translations[currentLanguage][featureTitles[index]] || titleElement.textContent;
-                    }
-                    
-                    if (descElement) {
-                        descElement.textContent = translations[currentLanguage][featureDescs[index]] || descElement.textContent;
-                    }
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (window.translations && window.translations[currentLanguage] && window.translations[currentLanguage][key]) {
+                    el.innerHTML = window.translations[currentLanguage][key];
                 }
             });
-            
-            // Update key features section title
-            document.querySelector('#key-features .section-title').innerHTML = (translations[currentLanguage]["key-features-title"] || "🌟 Key Features") + " <span class='badge'>V1.0</span>";
-            document.querySelector('#key-features .section-subtitle').textContent = translations[currentLanguage]["key-features-subtitle"] || "Discover the comprehensive set of tools that make Claude Code Chat the ultimate development companion";
         }
-
-        // Theme switching functionality
-        function toggleTheme() {
-            document.body.classList.toggle('dark-mode');
-            const themeToggle = document.querySelector('.theme-toggle');
-            if (document.body.classList.contains('dark-mode')) {
-                themeToggle.textContent = '☀️';
-            } else {
-                themeToggle.textContent = '🌙';
-            }
-        }
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    window.scrollTo({
-                        top: target.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Initialize
         document.addEventListener('DOMContentLoaded', function() {
-            // Set initial language to English
-            currentLanguage = 'en';
             updateLanguage();
+            bindSmoothScrollAnchors();
         });
     </script>
 </body>
