@@ -6,6 +6,11 @@
         "headers": { "Cache-Control": "public, max-age=86400" } 
       },
       {
+        "src": "/lang\.js",
+        "dest": "/lang.js",
+        "headers": { "Content-Type": "application/javascript" }
+      },
+      {
         "src": "/(.*)",
         "dest": "/index.htm" 
       }
