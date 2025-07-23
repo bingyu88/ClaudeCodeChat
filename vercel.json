@@ -1,0 +1,13 @@
+{
+    "version": 2,
+    "routes": [
+      {
+        "src": "/assets/img/(.*)",
+        "headers": { "Cache-Control": "public, max-age=86400" } 
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/index.htm" 
+      }
+    ]
+  }
