@@ -91,7 +91,7 @@ window.translations = {
     "kf-model-li7": "集成终端一键配置模型",
     "kf-slash-title": "⚡ 斜杠命令集成",
     "kf-slash-li1": "斜杠命令面板 - 输入 / 快速访问所有命令",
-    "kf-slash-li2": "19+ 内置命令 - /cost、/status、/config、/help、/memory、/review 等",
+    "kf-slash-li2": "19+ 内置命令 - /cost、/status、/config、\n/help、/memory、/review 等",
     "kf-slash-li3": "自定义命令支持 - 任意命令均可带上下文执行",
     "kf-slash-li4": "会话感知执行 - 所有命令自动带当前上下文",
     "kf-slash-li5": "终端集成 - 命令可直接在 VS Code 终端运行，支持 WSL",
