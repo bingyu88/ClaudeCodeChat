@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
     <title data-i18n="page-title">Claude Code Chat - Beautiful Claude Code Chat Interface for VS Code</title>
     <meta name="description" data-i18n="page-description" content="Claude Code Chat: The most powerful VS Code AI chat assistant, supporting code understanding, refactoring, debugging, file search, MCP server, permission management, image pasting, and more. Claude Code Chat makes development more efficient and intelligent.">
     <meta name="keywords" data-i18n="page-keywords" content="claude code chat, VS Code AI, AI chat, code assistant, AI programming, Claude, Anthropic, VSCode plugin, code refactoring, code debugging, MCP, file search, permission management, AI Copilot, AI development tools">
@@ -70,7 +71,8 @@
             width: 100%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 24px;
+            padding: 0 16px; /* 原来是24px，移动端建议更小 */
+            box-sizing: border-box;
         }
 
         /* Navigation */
@@ -109,7 +111,21 @@
             flex: 1; /* 新增，让菜单占据中间空间 */
             
             justify-content: center; /* 新增，让菜单项居中 */
+            align-items: flex-end;
             
+        }
+
+        .nav-menu li {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        .nav-menu a, .language-toggle, .theme-toggle {
+            font-size: 1rem;
+            line-height: 1.5;
+            height: 2.5rem;
+            display: flex;
+            align-items: center;
         }
 
         .nav-menu a {
@@ -120,11 +136,14 @@
             padding: 0.5rem 1rem;
             border-radius: 8px;
             white-space: nowrap;
+            padding-bottom: 0.1rem; 
+            padding-top: 0.7rem;
         }
 
         .nav-menu a:hover {
             color: var(--primary);
             background-color: rgba(79, 70, 229, 0.1);
+            
         }
 
         .nav-controls {
@@ -722,6 +741,92 @@
         strong {
             font-weight: 600;
         }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative; /* Needed for mobile menu positioning */
+        }
+
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 44px;
+            height: 44px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            margin-left: 1rem;
+            border-radius: 50%;
+            transition: background 0.2s;
+        }
+        .hamburger-menu:hover {
+            background: rgba(79, 70, 229, 0.08);
+        }
+        .hamburger-menu .bar {
+            width: 26px;
+            height: 3px;
+            background-color: var(--text-primary);
+            border-radius: 2px;
+            margin: 3px 0;
+            transition: background 0.2s cubic-bezier(.4,2.3,.3,1);
+        }
+        /* 移除 X 动画相关样式 */
+        /* .hamburger-menu.active .bar:nth-child(1), .hamburger-menu.active .bar:nth-child(2), .hamburger-menu.active .bar:nth-child(3) 不再变形 */
+        @media (max-width: 768px) {
+            .hamburger-menu {
+                display: flex;
+            }
+        }
+        html, body {
+            overflow-x: hidden;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 16px;
+            box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                position: fixed;
+                top: 64px;
+                left: 0;
+                right: 0;
+                width: 100vw;
+                background: var(--card-bg);
+                z-index: 999;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+                flex-direction: column;
+                align-items: center;
+                padding: 2rem 0 1rem 0;
+                gap: 2rem;
+                font-size: 1.3rem;
+            }
+            .nav-menu.active {
+                display: flex;
+            }
+            .nav-menu li {
+                width: 100%;
+                justify-content: center;
+            }
+            .nav-controls {
+                display: flex !important;
+                flex-direction: column;
+                gap: 1rem;
+                margin-top: 2rem;
+            }
+            .hamburger-menu {
+                display: flex;
+                margin-left: auto;
+            }
+        }
     </style>
 </head>
 <body>
@@ -762,6 +867,11 @@
                 </select>
                 <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
             </div>
+            <button class="hamburger-menu" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </div>
     </nav>
 
@@ -1373,5 +1483,43 @@
             });
         });
     </script>
-</body>
-</html>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    // 1. 菜单和汉堡按钮选择
+    const navMenu = document.querySelector('.nav-menu');
+    const navControls = document.querySelector('.nav-controls');
+    const hamburger = document.querySelector('.hamburger-menu');
+    const navContainer = document.querySelector('.nav-container');
+
+    // 2. 移动端菜单内容移动
+    function moveControlsToMenu() {
+        if (window.innerWidth <= 768) {
+            if (!navMenu.contains(navControls)) {
+                navMenu.appendChild(navControls);
+            }
+        } else {
+            if (!navContainer.contains(navControls)) {
+                navContainer.appendChild(navControls);
+            }
+            // 关闭菜单
+            navMenu.classList.remove('active');
+        }
+    }
+    window.addEventListener('resize', moveControlsToMenu);
+    moveControlsToMenu();
+
+    // 3. 汉堡按钮事件
+    hamburger.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+    });
+
+    // 4. 点击菜单项后自动收起菜单（移动端体验更好）
+    navMenu.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+                navMenu.classList.remove('active');
+            }
+        });
+    });
+});
+</script>

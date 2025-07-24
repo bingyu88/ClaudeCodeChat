@@ -182,7 +182,7 @@ window.translations = {
     "getting-title": "🚀 시작하기",
     "getting-subtitle": "몇 분 안에 Claude Code Chat을 설정하고 개발 워크플로우 향상을 시작하세요",
     "getting-prereq-title": "전제 조건",
-    "getting-prereq-li1": "VS Code 1.80+ - 최신 버전 권장",
+    "getting-prereq-li1": "<a href=\"https://code.visualstudio.com/Download\" target=\"_blank\">VS Code</a> 1.80+ - 최신 버전 권장",
     "getting-prereq-li2": "Claude Code CLI - <a href=\"https://claude.ai/code\" target=\"_blank\">Anthropic에서 설치</a>",
     "getting-prereq-li3": "활성 Claude API 또는 구독 - API 또는 Pro/Max 플랜",
     "getting-install-title": "설치",
@@ -244,6 +244,14 @@ window.translations = {
     "advanced-history-title": "🔄 대화 기록",
     "advanced-history-li1": "자동 저장 - 모든 대화가 저장됨",
     "advanced-history-li2": "스마트 복원 - 정확히 중단한 지점에서 계속",
-    "advanced-history-li3": "채팅 간 전환 - 이전 대화를 쉽게 검토하고 전환"
+    "advanced-history-li3": "채팅 간 전환 - 이전 대화를 쉽게 검토하고 전환",
+    "page-title": "Claude Code Chat - VS Code를 위한 아름다운 Claude Code Chat 인터페이스",
+    "page-description": "Claude Code Chat: 코드 이해, 리팩토링, 디버깅, 파일 검색, MCP 서버, 권한 관리, 이미지 붙여넣기 등을 지원하는 가장 강력한 VS Code AI 채팅 어시스턴트입니다. Claude Code Chat은 개발을 더 효율적이고 지능적으로 만듭니다.",
+    "page-keywords": "claude code chat, VS Code AI, AI 채팅, 코드 어시스턴트, AI 프로그래밍, Claude, Anthropic, VSCode 플러그인, 코드 리팩토링, 코드 디버깅, MCP, 파일 검색, 권한 관리, AI Copilot, AI 개발 도구",
+    "og-title": "Claude Code Chat - 가장 강력한 VS Code AI 채팅 어시스턴트",
+    "og-description": "Claude Code Chat: 코드 이해, 리팩토링, 디버깅, 파일 검색, MCP 서버, 권한 관리 등을 갖춘 AI 기반 개발. Claude Code Chat은 개발을 더 효율적이고 지능적으로 만듭니다.",
+    "og-site-name": "Claude Code Chat",
+    "twitter-title": "Claude Code Chat - 가장 강력한 VS Code AI 채팅 어시스턴트",
+    "twitter-description": "Claude Code Chat: 코드 이해, 리팩토링, 디버깅, 파일 검색, MCP 서버, 권한 관리 등을 갖춘 AI 기반 개발. Claude Code Chat은 개발을 더 효율적이고 지능적으로 만듭니다."
   }
 }

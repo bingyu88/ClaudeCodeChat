@@ -182,7 +182,7 @@ window.translations = {
     "getting-title": "🚀 Rozpoczęcie pracy",
     "getting-subtitle": "Skonfiguruj Claude Code Chat w kilka minut i zacznij ulepszać swój przepływ pracy programistycznej",
     "getting-prereq-title": "Wymagania wstępne",
-    "getting-prereq-li1": "VS Code 1.80+ - zalecana najnowsza wersja",
+    "getting-prereq-li1": "<a href=\"https://code.visualstudio.com/Download\" target=\"_blank\">VS Code</a> 1.80+ - zalecana najnowsza wersja",
     "getting-prereq-li2": "Claude Code CLI - <a href=\"https://claude.ai/code\" target=\"_blank\">zainstaluj z Anthropic</a>",
     "getting-prereq-li3": "Aktywne API Claude lub subskrypcja - pakiet API lub Pro/Max",
     "getting-install-title": "Instalacja",
@@ -244,6 +244,14 @@ window.translations = {
     "advanced-history-title": "🔄 Historia rozmów",
     "advanced-history-li1": "Automatyczne zapisywanie - każda rozmowa jest zapisywana",
     "advanced-history-li2": "Inteligentne przywracanie - kontynuuj od miejsca, w którym przerwałeś",
-    "advanced-history-li3": "Przełączanie czatów - łatwo sprawdzaj i przełączaj się między poprzednimi rozmowami"
+    "advanced-history-li3": "Przełączanie czatów - łatwo sprawdzaj i przełączaj się między poprzednimi rozmowami",
+    "page-title": "Claude Code Chat - Piękny interfejs czatu Claude Code dla VS Code",
+    "page-description": "Claude Code Chat: Najpotężniejszy asystent czatu AI dla VS Code, obsługujący rozumienie kodu, refaktoryzację, debugowanie, wyszukiwanie plików, serwer MCP, zarządzanie uprawnieniami, wklejanie obrazów i wiele więcej. Claude Code Chat sprawia, że programowanie jest bardziej wydajne i inteligentne.",
+    "page-keywords": "claude code chat, VS Code AI, czat AI, asystent kodu, programowanie AI, Claude, Anthropic, wtyczka VSCode, refaktoryzacja kodu, debugowanie kodu, MCP, wyszukiwanie plików, zarządzanie uprawnieniami, AI Copilot, narzędzia programistyczne AI",
+    "og-title": "Claude Code Chat - Najpotężniejszy asystent czatu AI dla VS Code",
+    "og-description": "Claude Code Chat: Programowanie wspomagane przez AI z rozumieniem kodu, refaktoryzacją, debugowaniem, wyszukiwaniem plików, serwerem MCP, zarządzaniem uprawnieniami i wieloma innymi. Claude Code Chat sprawia, że programowanie jest bardziej wydajne i inteligentne.",
+    "og-site-name": "Claude Code Chat",
+    "twitter-title": "Claude Code Chat - Najpotężniejszy asystent czatu AI dla VS Code",
+    "twitter-description": "Claude Code Chat: Programowanie wspomagane przez AI z rozumieniem kodu, refaktoryzacją, debugowaniem, wyszukiwaniem plików, serwerem MCP, zarządzaniem uprawnieniami i wieloma innymi. Claude Code Chat sprawia, że programowanie jest bardziej wydajne i inteligentne."
   }
 }

@@ -182,7 +182,7 @@ window.translations = {
     "getting-title": "🚀 Ξεκινώντας",
     "getting-subtitle": "Ρυθμίστε το Claude Code Chat σε λίγα λεπτά και αρχίστε να βελτιώνετε τη ροή εργασίας ανάπτυξής σας",
     "getting-prereq-title": "Προαπαιτούμενα",
-    "getting-prereq-li1": "VS Code 1.80+ - συνιστάται η τελευταία έκδοση",
+    "getting-prereq-li1": "<a href=\"https://code.visualstudio.com/Download\" target=\"_blank\">VS Code</a> 1.80+ - συνιστάται η τελευταία έκδοση",
     "getting-prereq-li2": "Claude Code CLI - <a href=\"https://claude.ai/code\" target=\"_blank\">Κατεβάστε από την Anthropic</a>",
     "getting-prereq-li3": "Ενεργό Claude API ή συνδρομή - πακέτο API ή Pro/Max",
     "getting-install-title": "Εγκατάσταση",
@@ -244,6 +244,14 @@ window.translations = {
     "advanced-history-title": "🔄 Ιστορικό Συνομιλιών",
     "advanced-history-li1": "Αυτόματη αποθήκευση - κάθε συνομιλία αποθηκεύεται",
     "advanced-history-li2": "Έξυπνη επαναφορά - συνεχίστε από εκεί που σταματήσατε",
-    "advanced-history-li3": "Εναλλαγή συνομιλιών - εύκολος έλεγχος και εναλλαγή μεταξύ προηγούμενων συνομιλιών"
+    "advanced-history-li3": "Εναλλαγή συνομιλιών - εύκολος έλεγχος και εναλλαγή μεταξύ προηγούμενων συνομιλιών",
+    "page-title": "Claude Code Chat - Όμορφη διεπαφή συνομιλίας Claude Code για το VS Code",
+    "page-description": "Claude Code Chat: Ο πιο ισχυρός βοηθός συνομιλίας AI για το VS Code, που υποστηρίζει κατανόηση κώδικα, αναδιάρθρωση, εντοπισμό σφαλμάτων, αναζήτηση αρχείων, διακομιστή MCP, διαχείριση αδειών, επικόλληση εικόνων και πολλά άλλα. Το Claude Code Chat κάνει την ανάπτυξη πιο αποτελεσματική και έξυπνη.",
+    "page-keywords": "claude code chat, VS Code AI, συνομιλία AI, βοηθός κώδικα, προγραμματισμός AI, Claude, Anthropic, πρόσθετο VSCode, αναδιάρθρωση κώδικα, εντοπισμός σφαλμάτων κώδικα, MCP, αναζήτηση αρχείων, διαχείριση αδειών, AI Copilot, εργαλεία ανάπτυξης AI",
+    "og-title": "Claude Code Chat - Ο πιο ισχυρός βοηθός συνομιλίας AI για το VS Code",
+    "og-description": "Claude Code Chat: Ανάπτυξη με την υποστήριξη της AI με κατανόηση κώδικα, αναδιάρθρωση, εντοπισμό σφαλμάτων, αναζήτηση αρχείων, διακομιστή MCP, διαχείριση αδειών και πολλά άλλα. Το Claude Code Chat κάνει την ανάπτυξη πιο αποτελεσματική και έξυπνη.",
+    "og-site-name": "Claude Code Chat",
+    "twitter-title": "Claude Code Chat - Ο πιο ισχυρός βοηθός συνομιλίας AI για το VS Code",
+    "twitter-description": "Claude Code Chat: Ανάπτυξη με την υποστήριξη της AI με κατανόηση κώδικα, αναδιάρθρωση, εντοπισμό σφαλμάτων, αναζήτηση αρχείων, διακομιστή MCP, διαχείριση αδειών και πολλά άλλα. Το Claude Code Chat κάνει την ανάπτυξη πιο αποτελεσματική και έξυπνη."
   }
 }

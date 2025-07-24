@@ -1,5 +1,13 @@
 window.translations = {
   en: {
+    "page-title": "Claude Code Chat - Beautiful Claude Code Chat Interface for VS Code",
+    "page-description": "Claude Code Chat: The most powerful VS Code AI chat assistant, supporting code understanding, refactoring, debugging, file search, MCP server, permission management, image pasting, and more. Claude Code Chat makes development more efficient and intelligent.",
+    "page-keywords": "claude code chat, VS Code AI, AI chat, code assistant, AI programming, Claude, Anthropic, VSCode plugin, code refactoring, code debugging, MCP, file search, permission management, AI Copilot, AI development tools",
+    "og-title": "Claude Code Chat - The Most Powerful VS Code AI Chat Assistant",
+    "og-description": "Claude Code Chat: AI-powered development with code understanding, refactoring, debugging, file search, MCP server, permission management, and more. Claude Code Chat makes development more efficient and intelligent.",
+    "og-site-name": "Claude Code Chat",
+    "twitter-title": "Claude Code Chat - The Most Powerful VS Code AI Chat Assistant",
+    "twitter-description": "Claude Code Chat: AI-powered development with code understanding, refactoring, debugging, file search, MCP server, permission management, and more. Claude Code Chat makes development more efficient and intelligent.",
     // Features
     "nav-features": "Features",
     "nav-key-features": "Key Features",
@@ -182,7 +190,7 @@ window.translations = {
     "getting-title": "🚀 Getting Started",
     "getting-subtitle": "Set up Claude Code Chat in minutes and start enhancing your development workflow",
     "getting-prereq-title": "Prerequisites",
-    "getting-prereq-li1": "VS Code 1.80+ - Latest version recommended",
+    "getting-prereq-li1": "<a href=\"https://code.visualstudio.com/Download\" target=\"_blank\">VS Code</a> 1.80+ - Latest version recommended",
     "getting-prereq-li2": "Claude Code CLI - <a href=\"https://claude.ai/code\" target=\"_blank\">Install from Anthropic</a>",
     "getting-prereq-li3": "Active Claude API or subscription - API or Pro/Max plan",
     "getting-install-title": "Installation",

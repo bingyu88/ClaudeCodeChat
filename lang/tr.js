@@ -182,7 +182,7 @@ window.translations = {
     "getting-title": "🚀 Başlarken",
     "getting-subtitle": "Claude Code Chat'i dakikalar içinde kurun ve geliştirme iş akışınızı iyileştirmeye başlayın",
     "getting-prereq-title": "Ön Koşullar",
-    "getting-prereq-li1": "VS Code 1.80+ - en son sürüm önerilir",
+    "getting-prereq-li1": "<a href=\"https://code.visualstudio.com/Download\" target=\"_blank\">VS Code</a> 1.80+ - en son sürüm önerilir",
     "getting-prereq-li2": "Claude Code CLI - <a href=\"https://claude.ai/code\" target=\"_blank\">Anthropic'ten yükleyin</a>",
     "getting-prereq-li3": "Aktif Claude API veya abonelik - API paketi veya Pro/Max",
     "getting-install-title": "Kurulum",
@@ -244,6 +244,14 @@ window.translations = {
     "advanced-history-title": "🔄 Konuşma Geçmişi",
     "advanced-history-li1": "Otomatik kaydetme - her konuşma kaydedilir",
     "advanced-history-li2": "Akıllı geri yükleme - kaldığınız yerden devam edin",
-    "advanced-history-li3": "Sohbet değiştirme - önceki konuşmaları kolayca kontrol edin ve aralarında geçiş yapın"
+    "advanced-history-li3": "Sohbet değiştirme - önceki konuşmaları kolayca kontrol edin ve aralarında geçiş yapın",
+    "page-title": "Claude Code Chat - VS Code için Harika Claude Code Sohbet Arayüzü",
+    "page-description": "Claude Code Chat: Kod anlama, yeniden düzenleme, hata ayıklama, dosya arama, MCP sunucusu, izin yönetimi, resim yapıştırma ve daha fazlasını destekleyen en güçlü VS Code AI sohbet asistanı. Claude Code Chat, geliştirmeyi daha verimli ve akıllı hale getirir.",
+    "page-keywords": "claude code chat, VS Code AI, AI sohbet, kod asistanı, AI programlama, Claude, Anthropic, VSCode eklentisi, kod yeniden düzenleme, kod hata ayıklama, MCP, dosya arama, izin yönetimi, AI Copilot, AI geliştirme araçları",
+    "og-title": "Claude Code Chat - En Güçlü VS Code AI Sohbet Asistanı",
+    "og-description": "Claude Code Chat: Kod anlama, yeniden düzenleme, hata ayıklama, dosya arama, MCP sunucusu, izin yönetimi ve daha fazlasıyla AI destekli geliştirme. Claude Code Chat, geliştirmeyi daha verimli ve akıllı hale getirir.",
+    "og-site-name": "Claude Code Chat",
+    "twitter-title": "Claude Code Chat - En Güçlü VS Code AI Sohbet Asistanı",
+    "twitter-description": "Claude Code Chat: Kod anlama, yeniden düzenleme, hata ayıklama, dosya arama, MCP sunucusu, izin yönetimi ve daha fazlasıyla AI destekli geliştirme. Claude Code Chat, geliştirmeyi daha verimli ve akıllı hale getirir."
   }
 }

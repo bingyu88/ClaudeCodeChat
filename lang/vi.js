@@ -182,7 +182,7 @@ window.translations = {
     "getting-title": "🚀 Bắt đầu",
     "getting-subtitle": "Thiết lập Claude Code Chat trong vài phút và bắt đầu cải thiện quy trình làm việc phát triển của bạn",
     "getting-prereq-title": "Điều kiện tiên quyết",
-    "getting-prereq-li1": "VS Code 1.80+ - khuyến nghị phiên bản mới nhất",
+    "getting-prereq-li1": "<a href=\"https://code.visualstudio.com/Download\" target=\"_blank\">VS Code</a> 1.80+ - khuyến nghị phiên bản mới nhất",
     "getting-prereq-li2": "Claude Code CLI - <a href=\"https://claude.ai/code\" target=\"_blank\">Cài đặt từ Anthropic</a>",
     "getting-prereq-li3": "API Claude hoạt động hoặc đăng ký - API hoặc gói Pro/Max",
     "getting-install-title": "Cài đặt",
@@ -244,6 +244,14 @@ window.translations = {
     "advanced-history-title": "🔄 Lịch sử hội thoại",
     "advanced-history-li1": "Lưu tự động - mỗi hội thoại được lưu",
     "advanced-history-li2": "Khôi phục thông minh - tiếp tục từ nơi bạn đã dừng",
-    "advanced-history-li3": "Chuyển đổi chat - dễ dàng xem lại và chuyển đổi giữa các hội thoại trước đó"
+    "advanced-history-li3": "Chuyển đổi chat - dễ dàng xem lại và chuyển đổi giữa các hội thoại trước đó",
+    "page-title": "Claude Code Chat - Giao diện trò chuyện Claude Code đẹp cho VS Code",
+    "page-description": "Claude Code Chat: Trợ lý trò chuyện AI mạnh mẽ nhất cho VS Code, hỗ trợ hiểu mã, tái cấu trúc, gỡ lỗi, tìm kiếm tệp, máy chủ MCP, quản lý quyền, dán hình ảnh và hơn thế nữa. Claude Code Chat giúp phát triển hiệu quả và thông minh hơn.",
+    "page-keywords": "claude code chat, VS Code AI, trò chuyện AI, trợ lý mã, lập trình AI, Claude, Anthropic, plugin VSCode, tái cấu trúc mã, gỡ lỗi mã, MCP, tìm kiếm tệp, quản lý quyền, AI Copilot, công cụ phát triển AI",
+    "og-title": "Claude Code Chat - Trợ lý trò chuyện AI mạnh mẽ nhất cho VS Code",
+    "og-description": "Claude Code Chat: Phát triển dựa trên AI với khả năng hiểu mã, tái cấu trúc, gỡ lỗi, tìm kiếm tệp, máy chủ MCP, quản lý quyền và hơn thế nữa. Claude Code Chat giúp phát triển hiệu quả và thông minh hơn.",
+    "og-site-name": "Claude Code Chat",
+    "twitter-title": "Claude Code Chat - Trợ lý trò chuyện AI mạnh mẽ nhất cho VS Code",
+    "twitter-description": "Claude Code Chat: Phát triển dựa trên AI với khả năng hiểu mã, tái cấu trúc, gỡ lỗi, tìm kiếm tệp, máy chủ MCP, quản lý quyền và hơn thế nữa. Claude Code Chat giúp phát triển hiệu quả và thông minh hơn."
   }
 }

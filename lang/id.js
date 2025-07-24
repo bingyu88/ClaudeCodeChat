@@ -182,7 +182,7 @@ window.translations = {
     "getting-title": "🚀 Memulai",
     "getting-subtitle": "Siapkan Claude Code Chat dalam hitungan menit dan mulai tingkatkan alur kerja pengembangan Anda",
     "getting-prereq-title": "Prasyarat",
-    "getting-prereq-li1": "VS Code 1.80+ - versi terbaru direkomendasikan",
+    "getting-prereq-li1": "<a href=\"https://code.visualstudio.com/Download\" target=\"_blank\">VS Code</a> 1.80+ - versi terbaru direkomendasikan",
     "getting-prereq-li2": "Claude Code CLI - <a href=\"https://claude.ai/code\" target=\"_blank\">instal dari Anthropic</a>",
     "getting-prereq-li3": "API Claude aktif atau langganan - paket API atau Pro/Max",
     "getting-install-title": "Instalasi",
@@ -244,6 +244,14 @@ window.translations = {
     "advanced-history-title": "🔄 Riwayat Percakapan",
     "advanced-history-li1": "Penyimpanan otomatis - setiap percakapan disimpan",
     "advanced-history-li2": "Pemulihan cerdas - lanjutkan dari tempat Anda tinggalkan",
-    "advanced-history-li3": "Pengalihan chat - periksa dan beralih antara percakapan sebelumnya dengan mudah"
+    "advanced-history-li3": "Pengalihan chat - periksa dan beralih antara percakapan sebelumnya dengan mudah",
+    "page-title": "Claude Code Chat - Antarmuka Obrolan Kode Claude yang Indah untuk VS Code",
+    "page-description": "Claude Code Chat: Asisten obrolan AI VS Code yang paling kuat, mendukung pemahaman kode, refactoring, debugging, pencarian file, server MCP, manajemen izin, penempelan gambar, dan lainnya. Claude Code Chat membuat pengembangan lebih efisien dan cerdas.",
+    "page-keywords": "claude code chat, VS Code AI, obrolan AI, asisten kode, pemrograman AI, Claude, Anthropic, plugin VSCode, refactoring kode, debugging kode, MCP, pencarian file, manajemen izin, AI Copilot, alat pengembangan AI",
+    "og-title": "Claude Code Chat - Asisten Obrolan AI VS Code yang Paling Kuat",
+    "og-description": "Claude Code Chat: Pengembangan yang didukung AI dengan pemahaman kode, refactoring, debugging, pencarian file, server MCP, manajemen izin, dan lainnya. Claude Code Chat membuat pengembangan lebih efisien dan cerdas.",
+    "og-site-name": "Claude Code Chat",
+    "twitter-title": "Claude Code Chat - Asisten Obrolan AI VS Code yang Paling Kuat",
+    "twitter-description": "Claude Code Chat: Pengembangan yang didukung AI dengan pemahaman kode, refactoring, debugging, pencarian file, server MCP, manajemen izin, dan lainnya. Claude Code Chat membuat pengembangan lebih efisien dan cerdas."
   }
 }

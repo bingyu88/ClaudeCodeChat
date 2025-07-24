@@ -178,7 +178,7 @@ window.translations.fr = {
         "getting-title": "🚀 Démarrage",
         "getting-subtitle": "Configurez Claude Code Chat en quelques minutes et commencez à améliorer votre flux de développement",
         "getting-prereq-title": "Prérequis",
-        "getting-prereq-li1": "VS Code 1.80+ - Version la plus récente recommandée",
+        "getting-prereq-li1": "<a href=\"https://code.visualstudio.com/Download\" target=\"_blank\">VS Code</a> 1.80+ - Version la plus récente recommandée",
         "getting-prereq-li2": "CLI Claude Code - <a href=\"https://claude.ai/code\" target=\"_blank\">Installer depuis Anthropic</a>",
         "getting-prereq-li3": "API Claude active ou abonnement - API ou plan Pro/Max",
         "getting-install-title": "Installation",
@@ -249,6 +249,14 @@ window.translations.fr = {
     "advanced-history-li1": "[French] Automatic saving - Every conversation is preserved",
     "advanced-history-li2": "[French] Smart restoration - Resume exactly where you left off",
     "advanced-history-li3": "[French] Switch between chats - Easily check and switch to previous conversations",
-        "getting-shortcut-row4-2": "Ouvrir la modale des commandes slash"
+        "getting-shortcut-row4-2": "Ouvrir la modale des commandes slash",
+    "page-title": "Claude Code Chat - Superbe interface de chat Claude Code pour VS Code",
+    "page-description": "Claude Code Chat : L'assistant de chat IA le plus puissant pour VS Code, prenant en charge la compréhension du code, la refactorisation, le débogage, la recherche de fichiers, le serveur MCP, la gestion des autorisations, le collage d'images, et plus encore. Claude Code Chat rend le développement plus efficace et intelligent.",
+    "page-keywords": "claude code chat, VS Code AI, chat IA, assistant de code, programmation IA, Claude, Anthropic, plugin VSCode, refactorisation de code, débogage de code, MCP, recherche de fichiers, gestion des autorisations, AI Copilot, outils de développement IA",
+    "og-title": "Claude Code Chat - L'assistant de chat IA le plus puissant pour VS Code",
+    "og-description": "Claude Code Chat : Développement assisté par l'IA avec compréhension du code, refactorisation, débogage, recherche de fichiers, serveur MCP, gestion des autorisations, et plus encore. Claude Code Chat rend le développement plus efficace et intelligent.",
+    "og-site-name": "Claude Code Chat",
+    "twitter-title": "Claude Code Chat - L'assistant de chat IA le plus puissant pour VS Code",
+    "twitter-description": "Claude Code Chat : Développement assisté par l'IA avec compréhension du code, refactorisation, débogage, recherche de fichiers, serveur MCP, gestion des autorisations, et plus encore. Claude Code Chat rend le développement plus efficace et intelligent."
       }
       

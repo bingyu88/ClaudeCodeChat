@@ -182,7 +182,7 @@ window.translations = {
     "getting-title": "🚀 התחלה",
     "getting-subtitle": "הגדר את Claude Code Chat תוך דקות ספורות והתחל לשפר את זרימת העבודה שלך בפיתוח",
     "getting-prereq-title": "דרישות מקדימות",
-    "getting-prereq-li1": "VS Code 1.80+ - מומלצת הגרסה האחרונה",
+    "getting-prereq-li1": "<a href=\"https://code.visualstudio.com/Download\" target=\"_blank\">VS Code</a> 1.80+ - מומלצת הגרסה האחרונה",
     "getting-prereq-li2": "Claude Code CLI - <a href=\"https://claude.ai/code\" target=\"_blank\">הורד מ-Anthropic</a>",
     "getting-prereq-li3": "Claude API פעיל או מנוי - חבילת API או Pro/Max",
     "getting-install-title": "התקנה",
@@ -244,6 +244,14 @@ window.translations = {
     "advanced-history-title": "🔄 היסטוריית שיחות",
     "advanced-history-li1": "שמירה אוטומטית - כל שיחה נשמרת",
     "advanced-history-li2": "שחזור חכם - המשך מהמקום שבו הפסקת",
-    "advanced-history-li3": "החלפת שיחות - בדיקה והחלפה קלה בין שיחות קודמות"
+    "advanced-history-li3": "החלפת שיחות - בדיקה והחלפה קלה בין שיחות קודמות",
+    "page-title": "Claude Code Chat - ממשק צ'אט יפהפה של Claude Code עבור VS Code",
+    "page-description": "Claude Code Chat: עוזר הצ'אט החזק ביותר של VS Code AI, התומך בהבנת קוד, ריפקטורינג, ניפוי באגים, חיפוש קבצים, שרת MCP, ניהול הרשאות, הדבקת תמונות ועוד. Claude Code Chat הופך את הפיתוח ליעיל וחכם יותר.",
+    "page-keywords": "claude code chat, VS Code AI, צ'אט AI, עוזר קוד, תכנות AI, Claude, Anthropic, תוסף VSCode, ריפקטורינג קוד, ניפוי באגים בקוד, MCP, חיפוש קבצים, ניהול הרשאות, AI Copilot, כלי פיתוח AI",
+    "og-title": "Claude Code Chat - עוזר הצ'אט החזק ביותר של VS Code AI",
+    "og-description": "Claude Code Chat: פיתוח מבוסס AI עם הבנת קוד, ריפקטורינג, ניפוי באגים, חיפוש קבצים, שרת MCP, ניהול הרשאות ועוד. Claude Code Chat הופך את הפיתוח ליעיל וחכם יותר.",
+    "og-site-name": "Claude Code Chat",
+    "twitter-title": "Claude Code Chat - עוזר הצ'אט החזק ביותר של VS Code AI",
+    "twitter-description": "Claude Code Chat: פיתוח מבוסס AI עם הבנת קוד, ריפקטורינג, ניפוי באגים, חיפוש קבצים, שרת MCP, ניהול הרשאות ועוד. Claude Code Chat הופך את הפיתוח ליעיל וחכם יותר."
   }
 }

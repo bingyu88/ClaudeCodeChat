@@ -182,7 +182,7 @@ window.translations = {
     "getting-title": "🚀 入门指南",
     "getting-subtitle": "几分钟内设置 Claude Code Chat，提升你的开发效率",
     "getting-prereq-title": "前置条件",
-    "getting-prereq-li1": "VS Code 1.80+（建议最新版）",
+    "getting-prereq-li1": "<a href=\"https://code.visualstudio.com/Download\" target=\"_blank\">VS Code</a> 1.80+（建议最新版）",
     "getting-prereq-li2": "Claude Code CLI - <a href=\"https://claude.ai/code\" target=\"_blank\">从 Anthropic 安装</a>",
     "getting-prereq-li3": "有效的 Claude API 或订阅（API 或 Pro/Max 计划）",
     "getting-install-title": "安装",
@@ -244,6 +244,14 @@ window.translations = {
     "advanced-history-title": "🔄 会话历史",
     "advanced-history-li1": "自动保存 - 每次对话都被保留",
     "advanced-history-li2": "智能恢复 - 精确恢复到上次位置",
-    "advanced-history-li3": "多会话切换 - 轻松查阅和切换历史对话"
+    "advanced-history-li3": "多会话切换 - 轻松查阅和切换历史对话",
+    "page-title": "Claude Code Chat - 精美的 VS Code AI 聊天界面",
+    "page-description": "Claude Code Chat：最强大的 VS Code AI 聊天助手，支持代码理解、重构、调试、文件搜索、MCP 服务器、权限管理、图片粘贴等功能。Claude Code Chat 让开发更高效、更智能。",
+    "page-keywords": "claude code chat, VS Code AI, AI 聊天, 代码助手, AI 编程, Claude, Anthropic, VSCode 插件, 代码重构, 代码调试, MCP, 文件搜索, 权限管理, AI Copilot, AI 开发工具",
+    "og-title": "Claude Code Chat - 最强大的 VS Code AI 聊天助手",
+    "og-description": "Claude Code Chat：AI 驱动的开发体验，支持代码理解、重构、调试、文件搜索、MCP 服务器、权限管理等。Claude Code Chat 让开发更高效、更智能。",
+    "og-site-name": "Claude Code Chat",
+    "twitter-title": "Claude Code Chat - 最强大的 VS Code AI 聊天助手",
+    "twitter-description": "Claude Code Chat：AI 驱动的开发体验，支持代码理解、重构、调试、文件搜索、MCP 服务器、权限管理等。Claude Code Chat 让开发更高效、更智能。"
   }
 }
