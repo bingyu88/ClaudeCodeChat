@@ -6,8 +6,8 @@
         "headers": { "Cache-Control": "public, max-age=86400" }
       },
       {
-        "src": "/lang.js",
-        "dest": "/lang.js",
+        "src": "/lang/(.*).js",
+        "dest": "/lang/$1.js",
         "headers": { "Content-Type": "application/javascript" }
       },
       {
